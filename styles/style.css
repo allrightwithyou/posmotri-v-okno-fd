@@ -9,6 +9,7 @@ html {
 }
 
 .page {
+  display: flex;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -16,6 +17,8 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  align-content: center;
+  justify-content: center;
 }
 
 h1,
@@ -49,3 +52,69 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
 }
+
+.content{
+  display: grid;
+  margin:133px 30px;
+  grid-template-areas: "result content";
+  gap:30px;
+  width: 1140px;
+  height: 534px;
+  
+}
+
+.result{
+grid-area:result;
+align-self: center;
+display: grid;
+width: 711px;
+height: 456px;
+justify-content: flex-end;
+grid-rows: 2;
+}
+
+.search-form{
+display: grid;
+grid-template-columns: 225px 212px 194px;
+gap:40px;
+width: 100%;
+height:54px;
+}
+
+.content__list-container{
+height: 298px;
+width: 399px;
+overflow: scroll;
+}
+
+.content__details{
+display:grid;
+width: 100%;
+height: 100%;
+gap:26px;
+grid-area: content;
+}
+.result__video-container{
+  width: 711px;
+  height: 386px;
+  margin-bottom: 16px;
+  
+}
+.result__video{
+  object-fit:fill;
+  width: 100%;
+  height: 100%;
+}
+
+.content__video-card{
+  
+  display: grid;
+  width: 100%;
+  
+  grid-template-columns: repeat(2,1fr);
+}
+.content__video-card-thumbnail{
+width: 194px;
+height: 103px;
+}
+
