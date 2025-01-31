@@ -210,9 +210,44 @@ color:#fff;
 .search-form__checkbox-list{
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap:12px;
+
   margin-bottom: 5px;
 }
+.search-form__pseudo-checkbox{
+  content: "";
+  margin-right: 5px;
+  display: flex;
+  border: 1px solid #fff;
+  width: 19px;
+  height: 19px;
+  align-items: center;
+  
+  
+  
+}
+.search-form__checkbox:checked+.search-form__pseudo-checkbox::after{
+  content: "";
+  
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  position:absolute;
+  
+  
+  margin: 1px;
+  
+}
+
+
+
+
+
+
+
+
+
+
 .search-form__label{
   display: flex;
   flex-direction: row;
