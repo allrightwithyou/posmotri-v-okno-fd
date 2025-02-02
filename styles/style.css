@@ -10,8 +10,8 @@ html {
 
 .page {
   display: flex;
-  justify-content: center;
-  align-content: center;
+  justify-items: center;
+  align-items: center;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -134,6 +134,7 @@ ol {
   gap:3px;
   overflow: hidden; /* Обрезаем всё за пределами блока */
   color:#fff;
+  
   font-weight: 700;
   font-size: 30px;
   text-overflow: ellipsis;
@@ -329,7 +330,7 @@ fieldset{
 }
 
 .content__card-link:hover { 
-  text-decoration: underline;
+  text-decoration: underline auto #FFF;
   text-decoration-thickness:auto;
 }
 
@@ -355,6 +356,7 @@ fieldset{
 .result__video-container{
   position: relative;
 }
+
 .content__card-link:active{
   background-color: #545050;
 }
