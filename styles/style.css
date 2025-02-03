@@ -182,6 +182,7 @@ ol {
 }
 
 .content__card-link{
+  display: block;
   text-decoration: none;
 }
 
@@ -240,7 +241,10 @@ ol {
 
 .search-form__checkbox:checked+.search-form__pseudo-checkbox::after{
   content: "";
-  position:absolute;  
+  position:absolute;
+  display: flex;
+  justify-self: center;
+  align-self: center;  
   width: 16px;
   height: 16px;
   margin: 1px;
